@@ -2,10 +2,13 @@ import streamlit as st
 import requests
 import json
 import os
+from dotenv import load_dotenv
 from PIL import Image
 from io import BytesIO
 import base64
 from typing import Optional
+
+load_dotenv()
 
 # --- Constants ---
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
